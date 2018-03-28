@@ -25,9 +25,14 @@ class TestingJava extends Application
     
     //StackPane
     StackPane sp = new StackPane();
+    sp.getChildren().add(button);
     
     //Create Scene
-    Scene scene = new Scene();
+    Scene scene = new Scene(sp, 600,600);
+    
+    //Display
+    stage.setScene(scene);
+    stage.show();
     
   }
 }
